@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(data:image/jpeg;base64,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);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.profile{
+    border-radius: 50%;
+    height: 45vh;
+    margin-left: 70%;
+    margin-top: 50px;
+}
+
+.cart-icon{
+    width: 30px;
+    cursor: pointer;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+}
+
+.text-box{
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+}
+.text-box p{
+    font-size: 40px;
+    font-weight: bold;
+}
+.text-box h1{
+    font-size: 80px;
+    line-height: bold;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(back2.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.text-box h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text-box .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.text-box a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+}
+.text-box a span{
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+
+.social-icons{
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+
+.social-icons img{
+    width: 25px;
+    display: block;
+    margin: 25px 5px;
+}
+
+.btn:hover{
+    background-color: grey;
+}
+
+
+@media only screen and (max-width: 600px){
+    .logo{
+        width: 60px;
+    }
+    .text-box p{
+        font-size: 20px;
+    }
+    .text-box h1{
+        font-size: 35px;
+    }
+    .text-box h3{
+        font-size: 10px;
+    }
+    .text-box a{
+        padding: 4px 8px;
+    }
+    .text-box span{
+        font-size: 12px;
+    }
+    .social-icons img{
+        width: 15px;
+    }
+    .social-icons{
+        bottom: 5%;
+    }
+    nav ul li{
+        margin: 5px 15px;
+    }
+    .profile{
+        height: 25vh;
+        margin-left: 40%;
+        margin-top: 35px;
+    }
+}
